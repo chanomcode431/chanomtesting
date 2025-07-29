@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประเพณีไทย - Thai Festiverse</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+            background: linear-gradient(to right, #090979, #00d4ff);
+            color: white;
+            padding-top: 80px; /* เพื่อให้เนื้อหาไม่ทับ Navbar */
+        }
+        .navbar {
+            background: linear-gradient(to right,
+            rgba(0, 23, 104, 0.9),
+            rgba(0, 79, 174, 0.85),
+            rgba(0, 170, 226, 0.8)
+            );
+            z-index: 1030;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .tradition-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center; /* จัดให้อยู่กึ่งกลางในแนวตั้ง */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .tradition-item img {
+            max-width: 250px; /* จำกัดขนาดรูปภาพ */
+            height: auto;
+            border-radius: 8px;
+        }
+        .tradition-item:nth-child(even) { /* สลับตำแหน่งรูปภาพและข้อความสำหรับรายการคู่ */
+            flex-direction: row-reverse;
+        }
+        .tradition-item:nth-child(even) img { /*กิมมิกรูปเยื้องกัน*/
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .tradition-item h3 {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #FFD700; /* สีทองสำหรับหัวข้อ */
+        }
+        .tradition-item p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+            color: white;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .tradition-item,
+            .tradition-item:nth-child(even) {
+                flex-direction: column; /* เปลี่ยนเป็นแนวตั้งบนมือถือ */
+                text-align: center;
+            }
+            .tradition-item img,
+            .tradition-item:nth-child(even) img {
+                margin: 0 auto 20px auto; /* จัดกึ่งกลางรูปภาพและเพิ่มระยะห่างด้านล่าง */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <img src="./image/Festiverse-logo.png" width="50px" height="45px"><a class="navbar-brand fw-bold" href="index.html">Thai Festiverse</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">หน้าแรก</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">ประเพณี</a></li>
+                <li class="nav-item"><a class="nav-link" href="product.html">สินค้า</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">ติดต่อเรา</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container py-5">
+    <h1 class="text-center fw-bold mb-5">สำรวจประเพณีไทยในโลกเสมือน <br> Thai Festiverse</h1>
+    <hr class="mb-5">
+
+<!--Start 1.ลอยกระทง-->
+<div class="tradition-item d-flex flex-column flex-md-row align-items-center gap-4 p-4 rounded shadow-lg" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 16px;">
+  <img src="./image/KATON_1.jpg" alt="ประเพณีลอยกระทง" class="img-fluid rounded" style="max-width: 300px;">
+
+  <div>
+    <h3 class="fw-bold">1.ประเพณีลอยกระทง</h3>
+    <p>เทศกาลแห่งแสงสีในคืนวันเพ็ญเดือนสิบสอง ผู้คนจะประดิษฐ์กระทงจากวัสดุธรรมชาติและลอยลงแม่น้ำเพื่อขอขมาพระแม่คงคา และสะเดาะเคราะห์</p>
+
+    <div class="mt-3 d-flex gap-2">
+      <a href="#" class="btn btn-outline-light px-4">🎮 ทดลองใช้</a>
+      <a href="#" class="btn btn-warning px-4 text-dark fw-bold">🛒 ซื้อตัวเต็ม 2.99$</a>
+    </div>
+  </div>
+</div>
+<!--END 1.ลอยกระทง-->
+
+<!--Start 2.สงกรานต์-->
+<div class="tradition-item d-flex flex-column flex-md-row align-items-center gap-4 p-4 rounded shadow-lg" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 16px;">
+  <img src="./image/SONG_1.jpg" alt="ประเพณีลอยกระทง" class="img-fluid rounded" style="max-width: 300px;">
+  <div>
+    <h3 class="fw-bold">2.ประเพณีสงกรานต์</h3>
+    <p>วันขึ้นปีใหม่ไทย การสรงน้ำพระ รดน้ำขอพรผู้ใหญ่ และการเล่นสาดน้ำเพื่อความชุ่มฉ่ำและเป็นสิริมงคล</p>
+
+    <div class="mt-3 d-flex gap-2">
+      <a href="#" class="btn btn-outline-light px-4">🎮 ทดลองใช้</a>
+      <a href="#" class="btn btn-warning px-4 text-dark fw-bold">🛒 ซื้อตัวเต็ม 2.99$</a>
+    </div>
+  </div>
+</div>
+<!--END 2.สงกรานต์-->
+
+<!--Start 3.ประเพณีผีตาโขน-->
+<div class="tradition-item d-flex flex-column flex-md-row align-items-center gap-4 p-4 rounded shadow-lg" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 16px;">
+  <img src="./image/KATON_1.jpg" alt="ประเพณีลอยกระทง" class="img-fluid rounded" style="max-width: 300px;">
+  <div>
+    <h3 class="fw-bold">3.ประเพณีผีตาโขนต์</h3>
+    <p>ประเพณีขอฝนของชาวด่านซ้าย จังหวัดเลย ที่โดดเด่นด้วยหน้ากากผีอันเป็นเอกลักษณ์ และขบวนแห่ที่สนุกสนาน</p>
+
+    <div class="mt-3 d-flex gap-2">
+      <a href="#" class="btn btn-outline-light px-4">🎮 ทดลองใช้</a>
+      <a href="#" class="btn btn-warning px-4 text-dark fw-bold">🛒 ซื้อตัวเต็ม 2.99$</a>
+    </div>
+  </div>
+</div>
+<!--END 3.ประเพณีผีตาโขน-->
+
+<!--Start 4.ประเพณีเข้าบรรษา-->
+<div class="tradition-item d-flex flex-column flex-md-row align-items-center gap-4 p-4 rounded shadow-lg" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 16px;">
+  <img src="./image/KATON_1.jpg" alt="ประเพณีลอยกระทง" class="img-fluid rounded" style="max-width: 300px;">
+  <div>
+    <h3 class="fw-bold">4.ประเพณีเข้าบรรษา</h3>
+    <p>ประเพณีขอฝนทางภาคอีสาน โดยการจุดบั้งไฟขึ้นสู่ท้องฟ้า เชื่อว่าเป็นการบอกกล่าวพญาแถนให้ส่งฝนลงมา</p>
+
+    <div class="mt-3 d-flex gap-2">
+      <a href="#" class="btn btn-outline-light px-4">🎮 ทดลองใช้</a>
+      <a href="#" class="btn btn-warning px-4 text-dark fw-bold">🛒 ซื้อตัวเต็ม 2.99$</a>
+    </div>
+  </div>
+</div>
+<!--END 4.ประเพณีเข้าบรรษา-->
+
+<!--Start 4.ประเพณีเข้าบรรษา-->
+<div class="tradition-item d-flex flex-column flex-md-row align-items-center gap-4 p-4 rounded shadow-lg" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 16px;">
+  <img src="./image/KATON_1.jpg" alt="ประเพณีลอยกระทง" class="img-fluid rounded" style="max-width: 300px;">
+  <div>
+    <h3 class="fw-bold">5.ประเพณีเข้าบรรษา</h3>
+    <p>วันเริ่มต้นแห่งการจำพรรษาของพระสงฆ์เป็นเวลาสามเดือน มีการถวายผ้าอาบน้ำฝนและเทียนพรรษา</p>
+
+    <div class="mt-3 d-flex gap-2">
+      <a href="#" class="btn btn-outline-light px-4">🎮 ทดลองใช้</a>
+      <a href="#" class="btn btn-warning px-4 text-dark fw-bold">🛒 ซื้อตัวเต็ม 2.99$</a>
+    </div>
+  </div>
+</div>
+<!--END 4.ประเพณีเข้าบรรษา-->
+
+<!--Start 5.ประเพณีเข้าบรรษา-->
+<div class="tradition-item d-flex flex-column flex-md-row align-items-center gap-4 p-4 rounded shadow-lg" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 16px;">
+  <img src="./image/KATON_1.jpg" alt="ประเพณีลอยกระทง" class="img-fluid rounded" style="max-width: 300px;">
+  <div>
+    <h3 class="fw-bold">6.ประเพณีออกพรรษา</h3>
+    <p>วันสิ้นสุดการจำพรรษาของพระสงฆ์ มักมีการตักบาตรเทโวโรหณะและการแสดงออกซึ่งความศรัทธา</p>
+
+    <div class="mt-3 d-flex gap-2">
+      <a href="#" class="btn btn-outline-light px-4">🎮 ทดลองใช้</a>
+      <a href="#" class="btn btn-warning px-4 text-dark fw-bold">🛒 ซื้อตัวเต็ม 2.99$</a>
+    </div>
+  </div>
+</div>
+<!--END 5.ประเพณีเข้าบรรษา-->
+
+<!--Start 6.ประเพณีชักพระ-->
+<div class="tradition-item d-flex flex-column flex-md-row align-items-center gap-4 p-4 rounded shadow-lg" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 16px;">
+  <img src="./image/KATON_1.jpg" alt="ประเพณีลอยกระทง" class="img-fluid rounded" style="max-width: 300px;">
+  <div>
+    <h3 class="fw-bold">7.ประเพณีชักพระ</h3>
+    <p>ประเพณีทางภาคใต้ที่อัญเชิญพระพุทธรูปขึ้นประดิษฐานบนบุษบก แล้วลากไปตามถนนหรือทางน้ำในวันออกพรรษา</p>
+
+    <div class="mt-3 d-flex gap-2">
+      <a href="#" class="btn btn-outline-light px-4">🎮 ทดลองใช้</a>
+      <a href="#" class="btn btn-warning px-4 text-dark fw-bold">🛒 ซื้อตัวเต็ม 2.99$</a>
+    </div>
+  </div>
+</div>
+<!--END 6.ประเพณีชักพระ-->
+
+<!--Start 7.ประเพณีกฐิน-->
+<div class="tradition-item d-flex flex-column flex-md-row align-items-center gap-4 p-4 rounded shadow-lg" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 16px;">
+  <img src="./image/KATON_1.jpg" alt="ประเพณีลอยกระทง" class="img-fluid rounded" style="max-width: 300px;">
+  <div>
+    <h3 class="fw-bold">8.ประเพณีชักพระ</h3>
+    <p>การถวายผ้ากฐินแด่พระสงฆ์ที่จำพรรษาครบไตรมาส เป็นการสร้างบุญที่สำคัญและจัดขึ้นเพียงปีละครั้ง</p>
+
+    <div class="mt-3 d-flex gap-2">
+      <a href="#" class="btn btn-outline-light px-4">🎮 ทดลองใช้</a>
+      <a href="#" class="btn btn-warning px-4 text-dark fw-bold">🛒 ซื้อตัวเต็ม 2.99$</a>
+    </div>
+  </div>
+</div>
+<!--END 7.ประเพณีกฐิน-->
+
+<!--Start 8.พระราชพิธีพืชมงคลจรดพระนังคัลแรกนาขวัญ-->
+<div class="tradition-item d-flex flex-column flex-md-row align-items-center gap-4 p-4 rounded shadow-lg" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 16px;">
+  <img src="./image/KATON_1.jpg" alt="ประเพณีลอยกระทง" class="img-fluid rounded" style="max-width: 300px;">
+  <div>
+    <h3 class="fw-bold">9.พระราชพิธีพืชมงคลจรดพระนังคัลแรกนาขวัญ</h3>
+    <p>พิธีสำคัญที่จัดขึ้นเพื่อความเป็นสิริมงคลและบำรุงขวัญแก่เกษตรกรไทย เป็นการเริ่มต้นฤดูการเพาะปลูก</p>
+
+    <div class="mt-3 d-flex gap-2">
+      <a href="#" class="btn btn-outline-light px-4">🎮 ทดลองใช้</a>
+      <a href="#" class="btn btn-warning px-4 text-dark fw-bold">🛒 ซื้อตัวเต็ม 2.99$</a>
+    </div>
+  </div>
+</div>
+<!--END 8.พระราชพิธีพืชมงคลจรดพระนังคัลแรกนาขวัญ-->
+
+<!--Start 9.วันวิสาขบูชา-->
+<div class="tradition-item d-flex flex-column flex-md-row align-items-center gap-4 p-4 rounded shadow-lg" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 16px;">
+  <img src="./image/KATON_1.jpg" alt="ประเพณีลอยกระทง" class="img-fluid rounded" style="max-width: 300px;">
+  <div>
+    <h3 class="fw-bold">10.วันวิสาขบูชา</h3>
+    <p>วันสำคัญทางพระพุทธศาสนา ที่ระลึกถึงการประสูติ ตรัสรู้ และปรินิพพานของสมเด็จพระสัมมาสัมพุทธเจ้า</p>
+
+    <div class="mt-3 d-flex gap-2">
+      <a href="#" class="btn btn-outline-light px-4">🎮 ทดลองใช้</a>
+      <a href="#" class="btn btn-warning px-4 text-dark fw-bold">🛒 ซื้อตัวเต็ม 2.99$</a>
+    </div>
+  </div>
+</div>
+<!--END 9.วันวิสาขบูชา-->
+
+<!-- dddd -->
+
+</div>
+
+<footer>
+    <p>© 2025 ThaiMetaverse | พัฒนาเพื่อเผยแพร่วัฒนธรรมไทยผ่านเทคโนโลยี</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
